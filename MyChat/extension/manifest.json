@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Chat Escolar",
+  "version": "1.0",
+  "description": "Chat para comunicação entre alunos da mesma turma",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Abrir Chat Escolar"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"],
+      "css": ["styles/floating-chat.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": [
+      "chat.html",
+      "styles/chat.css",
+      "scripts/chat.js",
+      "login.html",
+      "scripts/login.js",
+      "styles/style.css"
+    ],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

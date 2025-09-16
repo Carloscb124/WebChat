@@ -1,0 +1,143 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-header {
+    background-color: #0084ff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0084ff;
+    font-weight: bold;
+}
+
+.minimize-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f0f2f5;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #65676b;
+}
+
+.message-time {
+    font-size: 11px;
+    color: #65676b;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.my-message {
+    align-items: flex-end;
+}
+
+.my-message .message-content {
+    background-color: #0084ff;
+    color: white;
+}
+
+.other-message {
+    align-items: flex-start;
+}
+
+.other-message .message-content {
+    background-color: #e4e6eb;
+    color: #050505;
+}
+
+.chat-input {
+    padding: 15px;
+    background-color: #f0f2f5;
+    border-top: 1px solid #dddfe2;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.chat-input button {
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0084ff;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.online-users {
+    padding: 10px 15px;
+    background-color: #f0f2f5;
+    border-top: 1px solid #dddfe2;
+    font-size: 13px;
+    color: #65676b;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #31a24c;
+    margin-right: 5px;
+}

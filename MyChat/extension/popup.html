@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Escolar</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        h3 {
+            color: #0084ff;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #0084ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0066cc;
+        }
+        button.secondary {
+            background-color: #e4e6eb;
+            color: #050505;
+        }
+        button.secondary:hover {
+            background-color: #d8dadf;
+        }
+    </style>
+</head>
+<body>
+    <h3>Chat Escolar</h3>
+    <button id="openChat">Abrir Chat</button>
+    <button id="openFloatingChat" class="secondary">Abrir Chat Flutuante</button>
+
+    <script src="scripts/popup.js"></script>
+</body>
+</html>

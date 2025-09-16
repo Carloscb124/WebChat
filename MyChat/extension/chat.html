@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Escolar</title>
+    <link rel="stylesheet" href="styles/chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="user-info">
+                <div class="user-avatar" id="userAvatar">U</div>
+                <div>
+                    <div>Chat da Turma</div>
+                    <small id="onlineStatus">0 online</small>
+                </div>
+            </div>
+            <button class="minimize-btn" id="minimizeBtn">—</button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message other-message">
+                <div class="message-sender">Sistema</div>
+                <div class="message-content">Bem-vindo ao chat escolar! Digite uma mensagem para começar.</div>
+                <div class="message-time">Agora</div>
+            </div>
+        </div>
+        
+        <div class="online-users" id="onlineUsers">
+            <span class="status-dot"></span> <span id="usersCount">0</span> usuários online
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Digite sua mensagem...">
+            <button id="sendBtn">➤</button>
+        </div>
+    </div>
+
+    <script src="scripts/chat.js"></script>
+</body>
+</html>
